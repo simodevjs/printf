@@ -29,6 +29,11 @@ int S_M_FORMAT(const char *format, va_list args)
 		num = va_arg(args, int);
 		sum += S_M_integer(num);
 	}
+	else if (*format == 'b')
+	{
+		num = va_arg(args, unsigned int);
+		count += S_M_binary(num);
+	}
 	else
 	{
 		write(1, "%", 1);
