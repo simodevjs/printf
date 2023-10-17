@@ -1,5 +1,5 @@
 #include "main.h"
-
+#DEFINE MAP -1
 /**
  * _printf - printf function
  * @format: the printed string
@@ -7,13 +7,13 @@
  */
 int _printf(const char *format, ...)
 {
-	int count;
+	int sum;
 
 	va_list args;
 
 	va_start(args, format);
 
-	count = 0;
+	sum = 0;
 
 	if (!format)
 	{
@@ -27,16 +27,16 @@ int _printf(const char *format, ...)
 			format++;
 				if (*format == '\0')
 				{
-					return (-1);
+					return (MAP);
 				}
-			count += handle_format(format, args);
+			sum += S_M_FORMAT(format, args);
 		}
 		else
 		{
-			count += _putchar(*format);
+			sum += _putchar(*format);
 		}
 		format++;
 	}
 	va_end(args);
-	return (count);
+	return (sum);
 }
