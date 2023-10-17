@@ -32,7 +32,7 @@ int S_M_FORMAT(const char *format, va_list args)
 	else if (*format == 'b')
 	{
 		num = va_arg(args, unsigned int);
-		count += S_M_binary(num);
+		sum += S_M_binary(num);
 	}
 	else
 	{

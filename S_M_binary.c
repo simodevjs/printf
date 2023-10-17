@@ -6,7 +6,7 @@
  * Return: number of characters already printed
  */
 
-int handle_binary(unsigned int numb)
+int S_M_binary(unsigned int numb)
 {
 	int sum = 0;
 	int z;
@@ -18,16 +18,16 @@ int handle_binary(unsigned int numb)
 		_putchar('0');
 		return (1);
 	}
-	while (num > 0)
+	while (numb > 0)
 	{
-		bin[i] = num % 2;
-		num = numb / 2;
+		bin[i] = numb % 2;
+		numb = numb / 2;
 		i++;
 	}
-	s = i - 1;
+	z = i - 1;
 	while (z >= 0)
 	{
-		_putchar(bin[s] + '0');
+		_putchar(bin[z] + '0');
 		sum++;
 		z--;
 	}
