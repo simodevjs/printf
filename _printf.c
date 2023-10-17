@@ -1,5 +1,5 @@
 #include "main.h"
-#DEFINE MAP -1
+#define MAP -1
 /**
  * _printf - printf function
  * @format: the printed string

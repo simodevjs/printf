@@ -6,7 +6,7 @@
 #include <unistd.h>
 #include <stdlib.h>
 
-
+int _putchar(char c);
 int _printf(const char *format, ...);
 int S_M_string(char *str);
 int S_M_integer(int num);

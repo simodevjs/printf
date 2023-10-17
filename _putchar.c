@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _putchar - print the character c 
+ * _putchar - print the character c
  * @c: character to print
  * Return: if succed 1.
  */
